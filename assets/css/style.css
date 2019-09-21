@@ -217,18 +217,28 @@ a:hover {
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: 100% 100%;
-  opacity: 0.4; }
-  .video-section .bg-dark {
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    opacity: 0.8;
-    top: 0;
-    left: 0;
-    z-index: 2; }
-  .video-section .bg-extra-dark-gray {
-    background-color: #1c1c1c; }
+  background-size: 100% 100%; }
+  .video-section .container {
+    padding: 150px 0px !important; }
+    .video-section .container h2 {
+      font-size: 47px;
+      color: #fff;
+      padding: 20px 0px;
+      text-align: center; }
+    .video-section .container p {
+      text-align: center;
+      padding-left: 50px;
+      padding-right: 50px;
+      color: #fff; }
+    .video-section .container .fa-youtube-play {
+      font-size: 16px;
+      color: #000;
+      margin-right: 8px; }
+    .video-section .container .btn-event {
+      margin-top: 30px;
+      margin-left: 40%;
+      background-color: #fff;
+      color: #000; }
 
 .home-gallery {
   padding: 100px 0px; }

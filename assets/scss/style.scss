@@ -182,7 +182,7 @@ a:hover{
   }
 
   .figure{
-  
+
 
     img{
       margin-top: 20px;
@@ -294,23 +294,35 @@ a:hover{
     background-position: center;
     background-repeat: no-repeat;
     background-size: 100% 100%;
-    opacity: 0.4;
+    // opacity: 0.6;
+    .container{
+      padding: 150px 0px!important;
+  h2{
+    font-size: 47px;
+    color: #fff;
+    padding: 20px 0px;
+    text-align: center;
+  }
+  p{
+    text-align: center;
+    padding-left: 50px;
+    padding-right: 50px;
+    color: #fff;
+  }
+  .fa-youtube-play{
+    font-size: 16px;
+    color: #000;
+    margin-right: 8px;
+  }
+  .btn-event{
+    margin-top: 30px;
+  margin-left: 40%;
+  background-color: #fff;
+  color: #000;
 
-  .bg-dark {
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    opacity: 0.8;
-    top: 0;
-    left: 0;
-
-    z-index: 2;
 
   }
-  .bg-extra-dark-gray {
-    background-color: #1c1c1c;
 }
-
 }
 
 

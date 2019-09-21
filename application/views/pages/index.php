@@ -279,9 +279,10 @@ include('include/header.php'); ?>
 </section>
 
 <section class="video-section">
-  <div class="bg-dark bg-extra-dark-gray">
-  <div class="container">
-  </div>
+<div class="container">
+  <h2>Beautiful and easy to use UI, professional animations and drag & drop feature</h2>
+  <p>With years of experience in the website design and development industry ThemeZaa pride ourselves on creating unique, creative and quality designs that are developed upon the latest modern coding and developing techniques, which are then built using the most up to date, structured coding framework so that your development team can take it to the next level with ease.</p>
+  <a href="<?php echo base_url() ?>Gallery" class="btn btn-primary btn-event btn-lg" role="button" aria-pressed="true"><i class="fa fa-youtube-play" aria-hidden="true"></i>See More Work</a>
 </div>
 </section>
 
