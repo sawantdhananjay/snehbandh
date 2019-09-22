@@ -59,6 +59,27 @@ a:hover {
 .carousel .carousel-item img {
   height: 100vh; }
 
+.carousel .carousel-caption {
+  top: 35%; }
+  @media only screen and (max-width: 1400px) {
+    .carousel .carousel-caption {
+      top: 30%; } }
+  .carousel .carousel-caption h1 {
+    font-weight: bold;
+    font-size: 57px;
+    padding: 10px 50px;
+    overflow: hidden; }
+    @media only screen and (max-width: 480px) {
+      .carousel .carousel-caption h1 {
+        font-size: 47px; } }
+  .carousel .carousel-caption .btn-event {
+    margin-top: 20px;
+    background-color: transparent;
+    border: 2px solid #fff; }
+  .carousel .carousel-caption .btn-event:hover {
+    background-color: #fff;
+    color: #141414; }
+
 .about-section {
   background-image: url(../../assets/images/about-bg.jpg);
   background-size: cover !important;
@@ -134,19 +155,94 @@ a:hover {
     font-size: 36px;
     text-align: center;
     padding-bottom: 20px; }
-  .service-photo-section .figure img {
-    margin-top: 20px;
-    width: 100%;
-    height: auto; }
-  .service-photo-section .figure h5 {
-    font-size: 17px;
-    font-weight: 600;
-    text-align: center;
-    padding-top: 18px; }
-  .service-photo-section .figure p {
-    font-size: 14px;
-    font-weight: 200;
-    text-align: center; }
+  .service-photo-section .figure {
+    width: 100%; }
+    @media only screen and (max-width: 1400px) {
+      .service-photo-section .figure .figure {
+        width: 100%;
+        padding-left: 15px;
+        padding-right: 15px; } }
+    .service-photo-section .figure .panel {
+      margin: 0 auto;
+      height: 270px;
+      width: 100%;
+      position: relative; }
+    .service-photo-section .figure .panel .front,
+    .service-photo-section .figure .panel .back {
+      text-align: center; }
+    .service-photo-section .figure .panel .front {
+      height: inherit;
+      position: absolute;
+      top: 0;
+      z-index: 900;
+      text-align: center;
+      -webkit-transform: rotateY(0deg) rotateX(0deg);
+      -moz-transform: rotateY(0deg) rotateX(0deg);
+      -webkit-transform-style: preserve-3d;
+      -moz-transform-style: preserve-3d;
+      -webkit-backface-visibility: hidden;
+      -moz-backface-visibility: hidden;
+      -webkit-transition: all .4s ease-in-out;
+      -moz-transition: all .4s ease-in-out;
+      -ms-transition: all .4s ease-in-out;
+      -o-transition: all .4s ease-in-out;
+      transition: all .4s ease-in-out; }
+    .service-photo-section .figure .panel .back {
+      height: inherit;
+      position: absolute;
+      top: 0;
+      z-index: 1000;
+      -webkit-transform: rotateX(-180deg);
+      -moz-transform: rotateX(-180deg);
+      -webkit-transform-style: preserve-3d;
+      -moz-transform-style: preserve-3d;
+      -webkit-backface-visibility: hidden;
+      -moz-backface-visibility: hidden;
+      -webkit-transition: all .4s ease-in-out;
+      -moz-transition: all .4s ease-in-out;
+      -ms-transition: all .4s ease-in-out;
+      -o-transition: all .4s ease-in-out;
+      transition: all .4s ease-in-out; }
+    .service-photo-section .figure .panel.flip .front {
+      z-index: 900;
+      -webkit-transform: rotateX(180deg);
+      -moz-transform: rotateX(180deg); }
+    .service-photo-section .figure .panel.flip .back {
+      z-index: 1000;
+      -webkit-transform: rotateY(0deg) rotateX(0deg);
+      -moz-transform: rotateY(0deg) rotateX(0deg); }
+    .service-photo-section .figure .box1 {
+      background-color: #fff;
+      width: 100%;
+      height: auto;
+      padding: 0px; }
+    .service-photo-section .figure .box2 {
+      background-color: #ff7e70;
+      width: 100%;
+      height: auto;
+      padding: 0px;
+      -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center; }
+      .service-photo-section .figure .box2 p {
+        text-align: center;
+        padding: 100px 0px; }
+        @media only screen and (max-width: 1200px) {
+          .service-photo-section .figure .box2 p {
+            padding: 75px 0px; } }
+    .service-photo-section .figure img {
+      margin-top: 0px;
+      width: 100%;
+      height: auto; }
+    .service-photo-section .figure .figure-caption h5 {
+      font-size: 17px;
+      font-weight: 700;
+      text-align: center;
+      padding-top: 18px; }
+    .service-photo-section .figure .figure-caption p {
+      font-size: 14px;
+      font-weight: 200;
+      text-align: center; }
 
 .img-cont-section .col-md-3 {
   padding: 0px !important; }
@@ -154,11 +250,17 @@ a:hover {
 .img-cont-section img {
   width: 100%;
   height: auto; }
+  @media only screen and (max-width: 1400px) {
+    .img-cont-section img {
+      height: 400px; } }
 
 .img-cont-section #text {
   background-color: #141414;
   padding: 15px 55px !important;
   text-align: left; }
+  @media only screen and (max-width: 1400px) {
+    .img-cont-section #text {
+      padding: 15px 20px !important; } }
   .img-cont-section #text .head-p {
     font-size: 16px;
     padding-top: 10px;
@@ -220,6 +322,14 @@ a:hover {
   background-size: 100% 100%; }
   .video-section .container {
     padding: 150px 0px !important; }
+    .video-section .container .youtube-btn {
+      background-color: #fff;
+      border-radius: 50%;
+      width: 80px;
+      height: 80px;
+      padding: 15px;
+      margin-left: auto;
+      margin-right: auto; }
     .video-section .container h2 {
       font-size: 47px;
       color: #fff;
@@ -233,10 +343,13 @@ a:hover {
     .video-section .container .fa-youtube-play {
       font-size: 16px;
       color: #000;
-      margin-right: 8px; }
+      margin-right: 8px;
+      border-radius: 50%; }
     .video-section .container .btn-event {
       margin-top: 30px;
-      margin-left: 40%;
+      margin-left: 43%;
+      border-color: #fff;
+      outline: #fff;
       background-color: #fff;
       color: #000; }
 

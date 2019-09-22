@@ -102,7 +102,7 @@
    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
    <script type="text/javascript">
    $(document).ready(function(){
-     $(".port-btn").click(function(){
+         $(".port-btn").click(function(){
          var value = $(this).attr('data-filter');
          if(value == "item")
          {            //$('.filter').removeClass('hidden');
@@ -160,6 +160,8 @@
   <script>
   AOS.init();
 </script>
+
+
 <script type="text/javascript">
 $(document).ready(function() {
     // grab the initial top offset of the navigation
@@ -190,47 +192,67 @@ $(document).ready(function() {
   });
 </script>
 
-<!-- <script type="text/javascript">
-$(document).scroll(function() {
-go_top();
+<script type="text/javascript">
+$(document).ready(function(){
+  // set up hover panels
+  // although this can be done without JavaScript, we've attached these events
+  // because it causes the hover to be triggered when the element is tapped on a touch device
+  $('.hover').hover(function(){
+    $(this).addClass('flip');
+  },function(){
+    $(this).removeClass('flip');
+  });
 });
-// Show go top on scroll
-function go_top(){
-if( $(document).scrollTop() > 200 ) {
-  $('#go-top').fadeIn();
-} else {
-  $('#go-top').fadeOut();
-}
+</script>
+
+<script type="text/javascript">
+(function($) {
+//Function to animate slider captions
+function doAnimations(elems) {
+  //Cache the animationend event in a variable
+  var animEndEv = "webkitAnimationEnd animationend";
+
+  elems.each(function() {
+    var $this = $(this),
+      $animationType = $this.data("animation");
+    $this.addClass($animationType).one(animEndEv, function() {
+      $this.removeClass($animationType);
+    });
+  });
 }
 
-// Go to top..
-$('#go-top').on( "click", function() {
-  $('html, body').animate({scrollTop: 0});
-  return false;
+//Variables on page load
+var $myCarousel = $("#carouselExampleIndicators"),
+  $firstAnimatingElems = $myCarousel
+    .find(".carousel-item:first")
+    .find("[data-animation ^= 'animated']");
+
+//Initialize carousel
+$myCarousel.carousel();
+
+//Animate captions in first slide on page load
+doAnimations($firstAnimatingElems);
+
+//Other slides to be animated on carousel slide event
+$myCarousel.on("slide.bs.carousel", function(e) {
+  var $animatingElems = $(e.relatedTarget).find(
+    "[data-animation ^= 'animated']"
+  );
+  doAnimations($animatingElems);
 });
-</script> -->
-
-<!-- <?php if($this->session->flashdata("contact_status")){
-      $contact_status = $this->session->flashdata("contact_status");
-    ?>
-    <input type="hidden" id="contact_status" name="contact_status" value="<?php echo $contact_status; ?>">
-    <script>
-      $('document').ready(function(){
-        function myFunction() {
-          var contact_status = $('#contact_status').val();
-          if(contact_status == 'email_success'){
-            $(".alert-success").show().delay(3000).fadeOut();
-          }
-          else{
-              $(".alert-danger").show().delay(3000).fadeOut();
-          }
-        }
-        myFunction();
-      });
-    </script> -->
-    <!-- <?php } ?> -->
-
-
-
+})(jQuery);
+</script>
+<script>
+var prevScrollpos = window.pageYOffset;
+window.onscroll = function() {
+var currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos) {
+    document.getElementById("navbar").style.top = "0";
+  } else {
+    document.getElementById("navbar").style.top = "-150px";
+  }
+  prevScrollpos = currentScrollPos;
+}
+</script>
   </body>
 </html>

@@ -12,12 +12,27 @@ include('include/header.php'); ?>
     <div class="carousel-inner">
       <div class="carousel-item active">
         <img class="d-block w-100" src="<?php echo base_url(); ?>assets/images/banner/ban01.jpeg" alt="First slide">
+            <div class="carousel-caption d-none d-md-block">
+              <p data-animation="animated fadeInDown">we work hard we play hard</p>
+              <h1 data-animation="animated fadeInUp" >Snehbandh Events <br> Event Management Company </h1>
+              <a href="<?php echo base_url() ?>" class="btn btn-primary btn-event btn-lg" data-animation="animated fadeInUp" role="button" aria-pressed="true">See More Work</a>
+            </div>
       </div>
       <div class="carousel-item">
         <img class="d-block w-100" src="<?php echo base_url(); ?>assets/images/banner/ban02.jpg" alt="Second slide">
+        <div class="carousel-caption d-none d-md-block">
+          <p>we work hard we play hard</p>
+          <h1 data-animation="animated fadeInUp">Snehbandh Events <br> Event Management Company </h1>
+          <a href="<?php echo base_url() ?>" class="btn btn-primary btn-event btn-lg" data-animation="animated fadeInUp" role="button" aria-pressed="true">See More Work</a>
+        </div>
       </div>
       <div class="carousel-item">
         <img class="d-block w-100" src="<?php echo base_url(); ?>assets/images/banner/ban02.jpg" alt="Third slide">
+        <div class="carousel-caption d-none d-md-block fadeInDown">
+          <p>we work hard we play hard</p>
+          <h1 data-animation="animated fadeInUp">Snehbandh Events <br> Event Management Company </h1>
+          <a href="<?php echo base_url() ?>" class="btn btn-primary btn-event btn-lg" role="button" data-animation="animated fadeInUp" aria-pressed="true">See More Work</a>
+        </div>
       </div>
     </div>
     <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -139,12 +154,23 @@ include('include/header.php'); ?>
 <section class="service-photo-section">
   <div class="container">
   <p class="head-p">what We do</p>
-  <h1>OUR SERVICES</h1>
+  <h1 class="">OUR SERVICES</h1>
   <div class="row">
     <div class="col-md-4">
       <figure class="figure">
-      <img src="assets/images/service/service2.jpg" class="figure-img img-fluid rounded" alt="A generic square placeholder image with rounded corners in a figure.">
-      <figcaption class="figure-caption">
+        <div class="hover panel">
+              <div class="front">
+                <div class="box1">
+                  <img src="assets/images/service/service2.jpg" class="figure-img img-fluid rounded" alt="A generic square placeholder image with rounded corners in a figure.">
+                </div>
+              </div>
+              <div class="back">
+                <div class="box2">
+                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                </div>
+              </div>
+            </div>
+        <figcaption class="figure-caption">
         <h5>Design and Development</h5>
         <p>600+ We created web design</p>
       </figcaption>
@@ -152,8 +178,19 @@ include('include/header.php'); ?>
     </div>
     <div class="col-md-4">
       <figure class="figure">
-      <img src="assets/images/service/service2.jpg" class="figure-img img-fluid rounded" alt="A generic square placeholder image with rounded corners in a figure.">
-      <figcaption class="figure-caption">
+        <div class="hover panel">
+              <div class="front">
+                <div class="box1">
+                  <img src="assets/images/service/service2.jpg" class="figure-img img-fluid rounded" alt="A generic square placeholder image with rounded corners in a figure.">
+                </div>
+              </div>
+              <div class="back">
+                <div class="box2">
+                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                </div>
+              </div>
+            </div>
+        <figcaption class="figure-caption">
         <h5>Design and Development</h5>
         <p>600+ We created web design</p>
       </figcaption>
@@ -161,8 +198,19 @@ include('include/header.php'); ?>
     </div>
     <div class="col-md-4">
       <figure class="figure">
-      <img src="assets/images/service/service3.jpg" class="figure-img img-fluid rounded" alt="A generic square placeholder image with rounded corners in a figure.">
-      <figcaption class="figure-caption">
+        <div class="hover panel">
+              <div class="front">
+                <div class="box1">
+                  <img src="assets/images/service/service2.jpg" class="figure-img img-fluid rounded" alt="A generic square placeholder image with rounded corners in a figure.">
+                </div>
+              </div>
+              <div class="back">
+                <div class="box2">
+                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                </div>
+              </div>
+            </div>
+        <figcaption class="figure-caption">
         <h5>Design and Development</h5>
         <p>600+ We created web design</p>
       </figcaption>
@@ -246,43 +294,57 @@ include('include/header.php'); ?>
 <section class="happy-client">
   <div class="container">
     <div class="row">
+
       <div class="col-md-3">
+        <div data-aos="fade-left"  data-aos-duration="1000">
         <img src="assets/images/tv.jpg" alt="">
         <div class="text">
           <h3  class="count" >450</h3>
           <p>HAPPY CLIENTS</p>
         </div>
       </div>
-    <div class="col-md-3">
-      <img src="assets/images/tv.jpg" alt="">
-      <div class="text">
-        <h3  class="count" >1350</h3>
-        <p>HAPPY CLIENTS</p>
       </div>
-    </div>
-    <div class="col-md-3">
-      <img src="assets/images/tv.jpg" alt="">
-      <div class="text">
-        <h3 class="count">300</h3>
-        <p>HAPPY CLIENTS</p>
+      <div class="col-md-3">
+        <div data-aos="fade-left" data-aos-duration="2000">
+        <img src="assets/images/tv.jpg" alt="">
+        <div class="text">
+          <h3  class="count" >450</h3>
+          <p>HAPPY CLIENTS</p>
+        </div>
       </div>
-    </div>
-    <div class="col-md-3">
-      <img src="assets/images/tv.jpg" alt="">
-      <div class="text">
-        <h3  class="count" >350</h3>
-        <p>HAPPY CLIENTS</p>
       </div>
-    </div>
+      <div class="col-md-3">
+        <div data-aos="fade-left" data-aos-duration="2500">
+        <img src="assets/images/tv.jpg" alt="">
+        <div class="text">
+          <h3  class="count" >450</h3>
+          <p>HAPPY CLIENTS</p>
+        </div>
+      </div>
+      </div>
+      <div class="col-md-3">
+        <div data-aos="fade-left" data-aos-duration="3000">
+        <img src="assets/images/tv.jpg" alt="">
+        <div class="text">
+          <h3  class="count" >450</h3>
+          <p>HAPPY CLIENTS</p>
+        </div>
+      </div>
+      </div>
   </div>
   </div>
 </section>
 
 <section class="video-section">
 <div class="container">
+  <div class="youtube-btn">
+    <a href="#">
+      <img src="assets/images/svg/youtube.svg" alt="">
+    </a>
+  </div>
   <h2>Beautiful and easy to use UI, professional animations and drag & drop feature</h2>
   <p>With years of experience in the website design and development industry ThemeZaa pride ourselves on creating unique, creative and quality designs that are developed upon the latest modern coding and developing techniques, which are then built using the most up to date, structured coding framework so that your development team can take it to the next level with ease.</p>
-  <a href="<?php echo base_url() ?>Gallery" class="btn btn-primary btn-event btn-lg" role="button" aria-pressed="true"><i class="fa fa-youtube-play" aria-hidden="true"></i>See More Work</a>
+  <a href="<?php echo base_url() ?>" class="btn btn-primary btn-event btn-lg" role="button" aria-pressed="true"><i class="fa fa-youtube-play " aria-hidden="true"></i>See More Work</a>
 </div>
 </section>
 

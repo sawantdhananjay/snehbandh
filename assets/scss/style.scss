@@ -17,6 +17,8 @@ $text_light_grey:#939393;
 
 // media query
 $media-phone: "only screen and (max-width : 480px)";
+$media-pc: "only screen and (max-width : 1400px)";
+$media-laptop: "only screen and (max-width : 1200px)";
 
 .row{
   padding: 0px!important;
@@ -76,6 +78,33 @@ a:hover{
 .carousel{
   .carousel-item img{
     height: 100vh;
+  }
+  .carousel-caption{
+    top:35%;
+    @media #{$media-pc} {
+        top:30%;
+  }
+
+    h1{
+      font-weight: bold;
+      font-size: 57px;
+      padding: 10px 50px;
+      overflow: hidden;
+      @media #{$media-phone} {
+        font-size: 47px;
+  }
+    }
+
+    .btn-event{
+      margin-top: 20px;
+      background-color: transparent;
+      border: 2px solid $white;
+    }
+    .btn-event:hover{
+      background-color: $white;
+      color: $footer_dark;
+
+    }
   }
 }
 
@@ -182,25 +211,120 @@ a:hover{
   }
 
   .figure{
+    width: 100%;
+    @media #{$media-pc} {
+   .figure{
+       width: 100%;
+       padding-left: 15px;
+       padding-right: 15px;
+   }
+  }
+    .panel {
+	margin: 0 auto;
+  height: 270px;
+  width: 100%;
+	position: relative;
+	// -webkit-perspective: 600px;
+	// -moz-perspective: 600px;
+}
+
+.panel .front,
+.panel .back {
+	text-align: center;
+}
+
+.panel .front {
+	height: inherit;
+	position: absolute;
+	top: 0;
+	z-index: 900;
+	text-align: center;
+	-webkit-transform: rotateY(0deg) rotateX(0deg);
+	   -moz-transform: rotateY(0deg) rotateX(0deg);
+	-webkit-transform-style: preserve-3d;
+	   -moz-transform-style: preserve-3d;
+	-webkit-backface-visibility: hidden;
+	   -moz-backface-visibility: hidden;
+	-webkit-transition: all .4s ease-in-out;
+	   -moz-transition: all .4s ease-in-out;
+		-ms-transition: all .4s ease-in-out;
+		 -o-transition: all .4s ease-in-out;
+			transition: all .4s ease-in-out;
+}
+
+.panel .back {
+	height: inherit;
+	position: absolute;
+	top: 0;
+	z-index: 1000;
+	-webkit-transform: rotateX(-180deg);
+	   -moz-transform: rotateX(-180deg);
+	-webkit-transform-style: preserve-3d;
+	   -moz-transform-style: preserve-3d;
+	-webkit-backface-visibility: hidden;
+	   -moz-backface-visibility: hidden;
+	-webkit-transition: all .4s ease-in-out;
+	   -moz-transition: all .4s ease-in-out;
+		-ms-transition: all .4s ease-in-out;
+		 -o-transition: all .4s ease-in-out;
+			transition: all .4s ease-in-out;
+}
+.panel.flip .front {
+	z-index: 900;
+	-webkit-transform: rotateX(180deg);
+	-moz-transform: rotateX(180deg);
+}
+.panel.flip .back {
+	z-index: 1000;
+	-webkit-transform: rotateY(0deg) rotateX(0deg);
+	-moz-transform: rotateY(0deg) rotateX(0deg);
+}
+.box1{
+	background-color: #fff;
+	width: 100%;
+	height: auto;
+
+	padding: 0px;
+
+}
+.box2{
+	background-color: #ff7e70;
+  width: 100%;
+	height: auto;
+	padding: 0px;
+  align-self: center;
+  p{
+    text-align: center;
+  padding: 100px 0px;
+  @media #{$media-laptop} {
+      padding: 75px 0px;
+  }
+  }
+}
 
 
     img{
-      margin-top: 20px;
+      margin-top: 0px;
       width: 100%;
       height: auto;
     }
-    h5{
-      font-size: 17px;
-      font-weight: 600;
-      text-align: center;
-      padding-top: 18px;
+    .figure-caption{
+
+      h5{
+        font-size: 17px;
+        font-weight: 700;
+        text-align: center;
+        padding-top: 18px;
+      }
+      p{
+        font-size: 14px;
+        font-weight: 200;
+        text-align: center;
+      }
     }
-    p{
-      font-size: 14px;
-      font-weight: 200;
-      text-align: center;
-    }
+
   }
+
 }
 
 .img-cont-section{
@@ -210,11 +334,17 @@ a:hover{
   img{
     width: 100%;
     height: auto;
+    @media #{$media-pc} {
+    height: 400px;
+  }
   }
   #text{
     background-color: $footer_dark;
     padding: 15px 55px!important;
     text-align: left;
+    @media #{$media-pc} {
+   padding: 15px 20px!important;
+  }
     .head-p{
       font-size: 16px;
       padding-top: 10px;
@@ -297,6 +427,15 @@ a:hover{
     // opacity: 0.6;
     .container{
       padding: 150px 0px!important;
+      .youtube-btn{
+        background-color: $white;
+        border-radius: 50%;
+        width: 80px;
+        height: 80px;
+        padding: 15px;
+        margin-left: auto;
+        margin-right: auto;
+      }
   h2{
     font-size: 47px;
     color: #fff;
@@ -313,14 +452,15 @@ a:hover{
     font-size: 16px;
     color: #000;
     margin-right: 8px;
+    border-radius: 50%;
   }
   .btn-event{
     margin-top: 30px;
-  margin-left: 40%;
+  margin-left: 43%;
+  border-color: #fff;
+  outline: #fff;
   background-color: #fff;
   color: #000;
-
-
   }
 }
 }

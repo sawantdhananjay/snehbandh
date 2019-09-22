@@ -12,7 +12,8 @@
        <link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
        <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
        <link href="<?php echo base_url(); ?>assets/css/ihover.min.css" rel="stylesheet">
-    
+       <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css'>
+
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" rel="stylesheet">
     <!-- <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet"> -->
      <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
@@ -27,7 +28,7 @@
 
 
       <!-- <div class="stick"> -->
-      <nav class="navbar w-100 navbar-expand-lg navbar-transperent ">
+      <nav class="navbar w-100 navbar-expand-lg navbar-transperent " id="navbar">
         <div class="container ">
       <!-- <a class="navbar-brand d-block d-sm-none" href="<?php echo base_url(); ?>"><img src="<?php echo base_url(); ?>assets/images/logo1.jpg" alt=""></a> -->
       <a class="navbar-brand" href="<?php echo base_url(); ?>"><img src="<?php echo base_url(); ?>assets/images/logo.png" alt="">
