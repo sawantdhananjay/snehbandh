@@ -254,5 +254,17 @@ var currentScrollPos = window.pageYOffset;
   prevScrollpos = currentScrollPos;
 }
 </script>
+<script type="text/javascript">
+  $(document).ready(function(){
+    var url = window.location.href;
+    var home_url =$('.home_page').attr('href');
+    if (url==home_url){
+        $('.navbar').removeClass('nav_class');
+    }
+    else{
+      $('.navbar').addClass('nav_class');
+    }
+  });
+</script>
   </body>
 </html>

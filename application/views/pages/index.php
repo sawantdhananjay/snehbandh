@@ -12,7 +12,7 @@ include('include/header.php'); ?>
     <div class="carousel-inner">
       <div class="carousel-item active">
         <img class="d-block w-100" src="<?php echo base_url(); ?>assets/images/banner/ban01.jpeg" alt="First slide">
-            <div class="carousel-caption d-none d-md-block">
+            <div class="carousel-caption ">
               <p data-animation="animated fadeInDown">we work hard we play hard</p>
               <h1 data-animation="animated fadeInUp" >Snehbandh Events <br> Event Management Company </h1>
               <a href="<?php echo base_url() ?>" class="btn btn-primary btn-event btn-lg" data-animation="animated fadeInUp" role="button" aria-pressed="true">See More Work</a>
@@ -20,16 +20,16 @@ include('include/header.php'); ?>
       </div>
       <div class="carousel-item">
         <img class="d-block w-100" src="<?php echo base_url(); ?>assets/images/banner/ban02.jpg" alt="Second slide">
-        <div class="carousel-caption d-none d-md-block">
-          <p>we work hard we play hard</p>
+        <div class="carousel-caption ">
+          <p data-animation="animated fadeInDown">we work hard we play hard</p>
           <h1 data-animation="animated fadeInUp">Snehbandh Events <br> Event Management Company </h1>
           <a href="<?php echo base_url() ?>" class="btn btn-primary btn-event btn-lg" data-animation="animated fadeInUp" role="button" aria-pressed="true">See More Work</a>
         </div>
       </div>
       <div class="carousel-item">
         <img class="d-block w-100" src="<?php echo base_url(); ?>assets/images/banner/ban02.jpg" alt="Third slide">
-        <div class="carousel-caption d-none d-md-block fadeInDown">
-          <p>we work hard we play hard</p>
+        <div class="carousel-caption  fadeInDown">
+          <p data-animation="animated fadeInDown">we work hard we play hard</p>
           <h1 data-animation="animated fadeInUp">Snehbandh Events <br> Event Management Company </h1>
           <a href="<?php echo base_url() ?>" class="btn btn-primary btn-event btn-lg" role="button" data-animation="animated fadeInUp" aria-pressed="true">See More Work</a>
         </div>
@@ -429,7 +429,7 @@ include('include/header.php'); ?>
                         <h6>John Doe</h6>
                         <p>Manager</p>
                       </div>
-                </div>
+                    </div>
                 </div>
       </div>
   </div>

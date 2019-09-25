@@ -67,12 +67,50 @@ a:hover{
   position: fixed;
   top: 0;
   z-index: 10;
+  @media #{$media-phone} {
+    width: 100%;
+  }
+
   .nav-link{
     color: #fff;
   }
 }
 .navbar-transperent{
   background-color: transparent;
+}
+.nav_class{
+  background-color: $white;
+  color: #000;
+  .nav-link{
+    color: #000!important;
+
+  }
+}
+.mobile-nvbar{
+  ul li:last-child {
+   border-bottom: 0;
+}
+  .nav-link{
+    color: #fff!important;
+    text-align: center;
+    z-index: 10;
+  }
+  .nav-item{
+    background-color: rgba(0,0,0,0.6);
+    border-bottom: 0.5px solid #fff;
+  }
+
+  .navbar-toggler{
+    border: none!important;
+    outline: 0.1px solid #fff;
+}
+
+.navbar-toggler-icon{
+   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+.navbar-brand img{
+  width: 80%;
+}
 }
 
 .carousel{
@@ -84,6 +122,10 @@ a:hover{
     @media #{$media-pc} {
         top:30%;
   }
+  @media #{$media-phone} {
+        top:30%;
+  }
+
 
     h1{
       font-weight: bold;
@@ -91,8 +133,10 @@ a:hover{
       padding: 10px 50px;
       overflow: hidden;
       @media #{$media-phone} {
-        font-size: 47px;
+        font-size: 25px;
+        padding: 10px 0px;
   }
+
     }
 
     .btn-event{
@@ -117,6 +161,10 @@ a:hover{
   height: 700px;
   width: 100%;
   padding: 130px 0px;
+  @media #{$media-phone} {
+    height: 920px;
+    text-align: center;
+  }
 
   #left-part{
     .red{
@@ -199,6 +247,10 @@ a:hover{
 
 .service-photo-section{
   padding: 100px 0px;
+  @media #{$media-phone} {
+     padding: 60px 0px;
+  }
+
   .head-p{
     margin-bottom: 0.5rem!important;
     text-align: center;
@@ -315,6 +367,9 @@ a:hover{
         font-weight: 700;
         text-align: center;
         padding-top: 18px;
+        @media #{$media-phone} {
+            padding-top: 0px;
+  }
       }
       p{
         font-size: 14px;
@@ -368,6 +423,9 @@ a:hover{
 }
 .portfolio{
   padding: 100px 0px;
+  @media #{$media-pc} {
+      padding:60px 0px;
+}
   ul{
     margin-bottom: 32px;
   }
@@ -375,6 +433,16 @@ a:hover{
   display: inline;
   text-align: center;
   padding-bottom: 15px;
+  @media #{$media-phone} {
+   display: block;
+  }
+
+  ul li .active{
+    @media #{$media-phone} {
+       border-bottom: 1px solid #000;
+    }
+
+  }
 
   .btn{
       background-color: #fff!important;
@@ -406,12 +474,26 @@ a:hover{
 
 .happy-client{
   padding: 100px 0px;
+  @media #{$media-pc} {
+      padding:60px 0px;
+}
   .col-md-3{
     display: inline-block;
+    @media #{$media-phone} {
+      overflow: hidden;
+  }
+
+    img{
+      @media #{$media-pc} {
+          width: 40%;
+          overflow: hidden;
+    }
+    }
   .text{
       // display: table-cell;
       float: right;
       padding-top: 0px;
+
   }
   }
 }
@@ -425,8 +507,16 @@ a:hover{
     background-repeat: no-repeat;
     background-size: 100% 100%;
     // opacity: 0.6;
+    @media #{$media-phone} {
+      height: 760px;
+  }
+
     .container{
       padding: 150px 0px!important;
+      @media #{$media-phone} {
+      padding: 100px 0px!important;
+  }
+
       .youtube-btn{
         background-color: $white;
         border-radius: 50%;
@@ -435,24 +525,39 @@ a:hover{
         padding: 15px;
         margin-left: auto;
         margin-right: auto;
+        @media #{$media-phone} {
+          width: 50px;
+          height: 50px;
+  }
+
       }
   h2{
     font-size: 47px;
     color: #fff;
     padding: 20px 0px;
     text-align: center;
+    @media #{$media-phone} {
+   font-size: 30px;
+  }
+
   }
   p{
     text-align: center;
     padding-left: 50px;
     padding-right: 50px;
     color: #fff;
+    @media #{$media-phone} {
+      padding-left: 20px;
+      padding-right: 20px;
+  }
+
   }
   .fa-youtube-play{
     font-size: 16px;
     color: #000;
     margin-right: 8px;
     border-radius: 50%;
+
   }
   .btn-event{
     margin-top: 30px;
@@ -461,6 +566,9 @@ a:hover{
   outline: #fff;
   background-color: #fff;
   color: #000;
+  @media #{$media-phone} {
+    margin-left: 25%;
+}
   }
 }
 }
@@ -527,6 +635,10 @@ a:hover{
   padding: 100px 0px;
   background-color: #1c1c1c;
   color: $white;
+  @media #{$media-phone} {
+   padding: 60px 0px;
+  }
+
   h6{
     font-size: 15px;
     color: #6f6f6f;
@@ -572,11 +684,306 @@ a:hover{
   }
   #bottom{
     padding-top: 20px!important;
+
+
     .left{
       text-align: left;
+      @media #{$media-phone} {
+        text-align: center;
+    }
     }
     .right{
       text-align: right;
+      @media #{$media-phone} {
+        text-align: center;
+    }
     }
   }
 }
+
+// about page start
+.about-top-img{
+background-image: url("../../assets/images/about-banner.jpg");
+margin-top: 120px;
+height: 450px;
+width: 100%;
+      .light-opacity {
+          position: absolute;
+          height: 570px;
+          width: 100%;
+          opacity: 0.75;
+          top: 0;
+          left: 0;
+
+      }
+      .bg-dark{
+        background-color: #1c1c1c;
+      }
+      .container{
+        padding: 200px!important;
+        text-align: center;
+        color: $white;
+        p{
+          font-size: 16px;
+          z-index: 9;
+          color: $white;
+        }
+        h1{
+          font-size: 32px;
+          color: $white;
+        }
+      }
+}
+
+
+.page-about-section{
+  padding-top: 100px;
+  padding-bottom: 50px;
+  .row{
+    padding-bottom: 50px!important;
+  }
+  .red{
+    color: red;
+    padding-top: 15px;
+  }
+  img{
+    width: 100%;
+    height: 100%;
+    padding: 15px 30px;
+  }
+  p{
+      font-size: 16px;
+
+  }
+  h3{
+    font-size: 26px;
+    padding-bottom: 10px;
+  }
+  .btn-event{
+  border-radius: 25px;
+  }
+}
+
+.about-happy-client{
+  padding: 100px 0px;
+  @media #{$media-pc} {
+      padding:60px 0px;
+}
+  .col-md-4{
+    display: inline-block;
+    @media #{$media-phone} {
+      overflow: hidden;
+  }
+
+    img{
+      margin-left: auto;
+      margin-right: auto;
+      @media #{$media-pc} {
+          width: 100%;
+          overflow: hidden;
+    }
+    }
+    .col-6{
+      padding: 0!important;
+
+    }
+  .text{
+      // display: table-cell;
+      h6{
+        font-size: 18px;
+        font-weight: 700;
+      }
+      p{
+        font-size: 14px;
+      }
+      padding-top: 0px;
+  }
+  }
+}
+.about-page-team{
+  padding: 100px 0px;
+  background-color: #f7f7f7;
+  .text{
+    padding: 30px;
+    background-color: $white;
+    margin: 10px;
+    p{
+      font-size: 14px;
+    }
+
+  }
+.fa-sort-desc{
+  font-size: 28px;
+  color: #d6d5d5;
+  position: relative;
+  top: -22px;
+  left: 35px;
+}
+  .col-md-4{
+    .row{
+      padding: !important;
+      margin-top: 10px!important;
+      img{
+          width: 80px;
+          height: 80px;
+          border-radius: 50%;
+      }
+      h6{
+        text-align: center;
+        font-size: 15px;
+        font-weight: 700;
+        padding-top: 25px;
+        margin-bottom: 1px;
+      }
+      p{
+        font-size: 12px;
+        text-align: center;
+      }
+    }
+  }
+
+}
+
+// about page ends
+
+// contact page start
+.contact-top-img{
+background-image: url("../../assets/images/about-banner.jpg");
+margin-top: 120px;
+height: 450px;
+width: 100%;
+
+.light-opacity {
+    position: absolute;
+    height: 570px;
+    width: 100%;
+    opacity: 0.75;
+    top: 0;
+    left: 0;
+
+}
+.bg-dark{
+  background-color: #1c1c1c;
+}
+.container{
+  padding: 200px!important;
+  text-align: center;
+  color: $white;
+  p{
+    font-size: 16px;
+    z-index: 9;
+    color: $white;
+  }
+  h1{
+    font-size: 32px;
+    color: $white;
+  }
+}
+
+}
+
+.address{
+  padding: 100px 0px;
+  text-align: center;
+  h6{
+    font-size: 15px;
+    font-weight: 300;
+  }
+  h2{
+    font-size: 57px;
+  }
+  p{
+    padding: 10px 150px;
+  }
+  .btn-event{
+    margin-left: auto;
+    margin-right: auto;
+    background-color: $white;
+    color: inherit;
+  }
+  .btn:hover{
+    background-color: $footer_dark;
+    color: $white;
+  }
+}
+
+.img-addr{
+  .col-md-6{
+    padding: 0px!important;
+  }
+  img{
+    width: 100%;
+  }
+  .fa{
+    font-size: 45px;
+    color: #ff214f;
+    padding-bottom: 15px;
+    margin-left: 45px;
+    @media #{$media-pc} {
+      font-size: 35px;
+      color: #ff214f;
+      padding-bottom: 15px;
+      margin-left: 45px;
+    }
+  }
+
+  p{
+    font-size: 16px;
+    font-weight: 300;
+  }
+  .bg-dark-cont{
+      background-color: #000;
+  }
+  .bg-light-cont{
+    background-color: #1c1c1c;
+  }
+  #frist{
+      padding: 91px 100px !important;
+      @media #{$media-pc} {
+        padding: 49px 30px !important;
+  }
+  @media #{$media-laptop} {
+      padding: 28px 30px !important;
+  }
+      color: $white;
+  }
+}
+
+.email_form{
+  padding: 100px 0px;
+  text-align: center;
+  h2{
+    font-size: 32px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+  p{
+    font-size: 16px;
+
+  }
+  .input-form{
+    width: 100%;
+    margin-top: 25px;
+    padding: 18px 25px;
+    font-size: 18px;
+  }
+  .big-textarea{
+    width: 100%;
+    margin-top: 25px;
+    padding: 18px 25px;
+    font-size: 18px;
+  }
+  .btn-event{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    background-color: $white;
+    color: inherit;
+  }
+  .btn:hover{
+    background-color: $footer_dark;
+    color: $white;
+  }
+}
+
+// contact page start

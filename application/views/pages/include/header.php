@@ -28,7 +28,7 @@
 
 
       <!-- <div class="stick"> -->
-      <nav class="navbar w-100 navbar-expand-lg navbar-transperent " id="navbar">
+      <nav class="navbar  w-100 d-none d-sm-block navbar-expand-lg navbar-transperent " id="navbar">
         <div class="container ">
       <!-- <a class="navbar-brand d-block d-sm-none" href="<?php echo base_url(); ?>"><img src="<?php echo base_url(); ?>assets/images/logo1.jpg" alt=""></a> -->
       <a class="navbar-brand" href="<?php echo base_url(); ?>"><img src="<?php echo base_url(); ?>assets/images/logo.png" alt="">
@@ -39,7 +39,7 @@
   <div class="collapse navbar-collapse" id="navbarNav">
     <ul class="navbar-nav ml-auto text-right">
       <li class="nav-item ">
-        <a class="nav-link <?php if($page=='home'){ echo 'active'; }?>" href="<?php echo base_url(); ?>">Home <span class="sr-only">(current)</span></a>
+        <a class="nav-link home_page <?php if($page=='home'){ echo 'active'; }?>" href="<?php echo base_url(); ?>" id="home_url">Home <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
         <a class="nav-link <?php if($page=='about'){ echo 'active'; }?>" href="<?php echo base_url(); ?>About-Us">About Us</a>
@@ -57,6 +57,35 @@
     </div>
 </nav>
 <!-- </div> -->
+<div class="mobile-nvbar d-block d-sm-none">
+  <nav class="navbar navbar-expand-lg navbar-light ">
+    <a class="navbar-brand" href="<?php echo base_url(); ?>"><img src="<?php echo base_url(); ?>assets/images/logo.png" alt="">
+    </a>
+<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+  <span class="navbar-toggler-icon"></span>
+</button>
+
+<div class="collapse navbar-collapse" id="navbarSupportedContent">
+  <ul class="navbar-nav mr-auto ">
+    <li class="nav-item">
+      <a class="nav-link <?php if($page=='home'){ echo 'active'; }?>" href="<?php echo base_url(); ?>">Home <span class="sr-only">(current)</span></a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link <?php if($page=='about'){ echo 'active'; }?>" href="<?php echo base_url(); ?>About-Us">About Us</a>
+    </li>
+    <!-- <a class="navbar-brand d-none d-sm-block" href="<?php echo base_url(); ?>"><img src="<?php echo base_url(); ?>assets/images/logo.jpg" alt="">
+    </a> -->
+    <li class="nav-item">
+      <a class="nav-link <?php if($page=='gallery'){ echo 'active'; }?>" href="<?php echo base_url(); ?>Gallery">Gallery</a>
+    </li>
+    <li class="nav-item" style="border-right:none;">
+      <a class="nav-link <?php if($page=='contact'){ echo 'active'; }?>" href="<?php echo base_url(); ?>Contact">Contact</a>
+    </li>
+  </ul>
+
+</div>
+</nav>
+</div>
 
 
   <!--navbar ends-->
