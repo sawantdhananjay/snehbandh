@@ -251,11 +251,11 @@ include('include/header.php'); ?>
       <div class="col-md-12 ">
         <div class="w-100  btn-group btn-group-md">
           <ul class="w-100 text-center">
-            <li><button class="active btn btn-md   port-btn" data-filter="item">ALL</button></li>
-            <li><button class="btn btn-md   port-btn" data-filter="logo">Logo</button>    </li>
-            <li><button class="btn btn-md   port-btn" data-filter="web">Web</button>  </li>
-            <li><button class="btn btn-md  port-btn"  data-filter="identity">Brand Identity</button></li>
-          </ul>
+            <li> <a href="javascript:void(0);" class="active port-btn" data-filter="item">ALL</a> </li>
+            <li> <a href="javascript:void(0);" class="port-btn" data-filter="logo">Logo</a></li>
+            <li> <a href="javascript:void(0);" class="port-btn" data-filter="web">Web</a></li>
+            <li> <a href="javascript:void(0);" class="port-btn"  data-filter="identity">Brand Identity</a></li>
+        </ul>
         </div>
       </div>
     </div>
