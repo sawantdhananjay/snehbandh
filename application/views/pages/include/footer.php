@@ -266,5 +266,10 @@ var currentScrollPos = window.pageYOffset;
     }
   });
 </script>
+<script type="text/javascript">
+$( document ).ready(function() {
+	$('.alert').show().delay(4000).fadeOut();
+});
+</script>
   </body>
 </html>
