@@ -62,6 +62,9 @@ a:hover {
 .nav_class {
   background-color: #fff;
   color: #000; }
+  @media only screen and (max-width: 480px) {
+    .nav_class {
+      background-color: #141414; } }
   .nav_class .nav-link {
     color: #000 !important; }
 
@@ -528,6 +531,9 @@ a:hover {
   margin-top: 120px;
   height: 450px;
   width: 100%; }
+  @media only screen and (max-width: 480px) {
+    .about-top-img {
+      margin-top: 100px; } }
   .about-top-img .light-opacity {
     position: absolute;
     height: 570px;
@@ -538,7 +544,7 @@ a:hover {
   .about-top-img .bg-dark {
     background-color: #1c1c1c; }
   .about-top-img .container {
-    padding: 200px !important;
+    padding: 200px 0px !important;
     text-align: center;
     color: #fff; }
     .about-top-img .container p {
@@ -552,6 +558,9 @@ a:hover {
 .page-about-section {
   padding-top: 100px;
   padding-bottom: 50px; }
+  @media only screen and (max-width: 480px) {
+    .page-about-section {
+      text-align: center; } }
   .page-about-section .row {
     padding-bottom: 50px !important; }
   .page-about-section .red {
@@ -578,7 +587,8 @@ a:hover {
     display: inline-block; }
     @media only screen and (max-width: 480px) {
       .about-happy-client .col-md-4 {
-        overflow: hidden; } }
+        overflow: hidden;
+        padding-top: 15px; } }
     .about-happy-client .col-md-4 img {
       margin-left: auto;
       margin-right: auto; }
@@ -611,6 +621,9 @@ a:hover {
     position: relative;
     top: -22px;
     left: 35px; }
+  @media only screen and (max-width: 480px) {
+    .about-page-team .col-md-4 {
+      padding-bottom: 45px; } }
   .about-page-team .col-md-4 .row {
     padding: !important;
     margin-top: 10px !important; }
@@ -633,6 +646,9 @@ a:hover {
   margin-top: 120px;
   height: 450px;
   width: 100%; }
+  @media only screen and (max-width: 480px) {
+    .contact-top-img {
+      margin-top: 100px; } }
   .contact-top-img .light-opacity {
     position: absolute;
     height: 570px;
@@ -643,7 +659,7 @@ a:hover {
   .contact-top-img .bg-dark {
     background-color: #1c1c1c; }
   .contact-top-img .container {
-    padding: 200px !important;
+    padding: 200px 0px !important;
     text-align: center;
     color: #fff; }
     .contact-top-img .container p {
@@ -662,8 +678,14 @@ a:hover {
     font-weight: 300; }
   .address h2 {
     font-size: 57px; }
+    @media only screen and (max-width: 480px) {
+      .address h2 {
+        font-size: 37px; } }
   .address p {
     padding: 10px 150px; }
+    @media only screen and (max-width: 480px) {
+      .address p {
+        padding: 10px 10px; } }
   .address .btn-event {
     margin-left: auto;
     margin-right: auto;
@@ -690,6 +712,9 @@ a:hover {
       color: #ff214f;
       padding-bottom: 15px;
       margin-left: 45px; } }
+  @media only screen and (max-width: 480px) {
+    .img-addr .fa {
+      margin-left: 0px; } }
 
 .img-addr p {
   font-size: 16px;
@@ -707,6 +732,9 @@ a:hover {
   @media only screen and (max-width: 1400px) {
     .img-addr #frist {
       padding: 49px 30px !important; } }
+  @media only screen and (max-width: 480px) {
+    .img-addr #frist {
+      text-align: center; } }
   @media only screen and (max-width: 1200px) {
     .img-addr #frist {
       padding: 28px 30px !important; } }
@@ -745,6 +773,9 @@ a:hover {
   margin-top: 120px;
   height: 450px;
   width: 100%; }
+  @media only screen and (max-width: 480px) {
+    .gallery-top-img {
+      margin-top: 100px; } }
   .gallery-top-img .light-opacity {
     position: absolute;
     height: 570px;
@@ -755,7 +786,7 @@ a:hover {
   .gallery-top-img .bg-dark {
     background-color: #1c1c1c; }
   .gallery-top-img .container {
-    padding: 200px !important;
+    padding: 200px 0px !important;
     text-align: center;
     color: #fff; }
     .gallery-top-img .container p {

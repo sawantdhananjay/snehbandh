@@ -80,6 +80,10 @@ a:hover{
 }
 .nav_class{
   background-color: $white;
+  @media #{$media-phone} {
+   background-color: $footer_dark;
+  }
+
   color: #000;
   .nav-link{
     color: #000!important;
@@ -703,6 +707,10 @@ background-image: url("../../assets/images/about-banner.jpg");
 margin-top: 120px;
 height: 450px;
 width: 100%;
+@media #{$media-phone} {
+   margin-top: 100px;
+  }
+
       .light-opacity {
           position: absolute;
           height: 570px;
@@ -716,7 +724,7 @@ width: 100%;
         background-color: #1c1c1c;
       }
       .container{
-        padding: 200px!important;
+        padding: 200px 0px!important;
         text-align: center;
         color: $white;
         p{
@@ -735,6 +743,9 @@ width: 100%;
 .page-about-section{
   padding-top: 100px;
   padding-bottom: 50px;
+  @media #{$media-phone} {
+    text-align: center;
+}
   .row{
     padding-bottom: 50px!important;
   }
@@ -769,6 +780,7 @@ width: 100%;
     display: inline-block;
     @media #{$media-phone} {
       overflow: hidden;
+      padding-top: 15px;
   }
 
     img{
@@ -816,6 +828,10 @@ width: 100%;
   left: 35px;
 }
   .col-md-4{
+    @media #{$media-phone} {
+      padding-bottom: 45px;
+  }
+
     .row{
       padding: !important;
       margin-top: 10px!important;
@@ -848,6 +864,9 @@ background-image: url("../../assets/images/about-banner.jpg");
 margin-top: 120px;
 height: 450px;
 width: 100%;
+@media #{$media-phone} {
+   margin-top: 100px;
+  }
 
 .light-opacity {
     position: absolute;
@@ -862,7 +881,7 @@ width: 100%;
   background-color: #1c1c1c;
 }
 .container{
-  padding: 200px!important;
+  padding: 200px 0px !important;
   text-align: center;
   color: $white;
   p{
@@ -887,9 +906,17 @@ width: 100%;
   }
   h2{
     font-size: 57px;
+    @media #{$media-phone} {
+      font-size: 37px;
+  }
+
   }
   p{
     padding: 10px 150px;
+    @media #{$media-phone} {
+   padding: 10px 10px;
+  }
+
   }
   .btn-event{
     margin-left: auto;
@@ -921,6 +948,10 @@ width: 100%;
       padding-bottom: 15px;
       margin-left: 45px;
     }
+    @media #{$media-phone} {
+      margin-left: 0px;
+  }
+
   }
 
   p{
@@ -938,6 +969,10 @@ width: 100%;
       @media #{$media-pc} {
         padding: 49px 30px !important;
   }
+  @media #{$media-phone} {
+      text-align: center;
+  }
+
   @media #{$media-laptop} {
       padding: 28px 30px !important;
   }
@@ -992,7 +1027,9 @@ background-image: url("../../assets/images/about-banner.jpg");
 margin-top: 120px;
 height: 450px;
 width: 100%;
-
+@media #{$media-phone} {
+   margin-top: 100px;
+  }
 .light-opacity {
     position: absolute;
     height: 570px;
@@ -1007,7 +1044,7 @@ width: 100%;
 }
 .container{
 
-  padding: 200px!important;
+  padding: 200px 0px!important;
   text-align: center;
   color: $white;
   p{

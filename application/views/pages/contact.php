@@ -2,13 +2,15 @@
 $page="contact";
 include('include/header.php'); ?>
 <section class="contact-top-img">
-  <div class="light-opacity bg-dark"></div>
+  <div class="light-opacity bg-dark">
     <div class="container">
       <div class="text">
         <p>We are awesome designer</p>
         <h1>Contact form</h1>
       </div>
     </div>
+  </div>
+
 </section>
 
 <section class="address">
